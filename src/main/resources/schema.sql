@@ -16,7 +16,7 @@ CREATE UNIQUE INDEX
     IF NOT EXISTS email_idx ON WALLETS (EMAIL);
 
 CREATE TABLE
-    IF NOT EXISTS TRANSACTIONS (
+    IF NOT EXISTS transactions (
                                 ID SERIAL PRIMARY KEY,
                                 PAYER INT,
                                 PAYEE INT,

@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:h2:file:./data/picpay;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    url: jdbc:h2:file:./data/picpay;MODE=PostgreSQL
     driver-class-name: org.h2.Driver
     username: sa
     password:
@@ -11,3 +11,13 @@ spring:
   sql:
     init:
       mode: always
+
+  kafka:
+    bootstrap-servers:
+      - localhost:9094
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
