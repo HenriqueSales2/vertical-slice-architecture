@@ -1,6 +1,7 @@
 package br.com.app.notification.service;
 
 import br.com.app.transaction.entity.Transaction;
+
 import org.springframework.stereotype.Service;
 
 @Service

@@ -2,9 +2,12 @@ package br.com.app.notification.service;
 
 import br.com.app.notification.exception.NotificationException;
 import br.com.app.notification.entity.Notification;
+
 import br.com.app.transaction.entity.Transaction;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;

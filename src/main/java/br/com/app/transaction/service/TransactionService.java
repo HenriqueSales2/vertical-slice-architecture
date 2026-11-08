@@ -1,13 +1,17 @@
 package br.com.app.transaction.service;
 
 import br.com.app.authorization.service.AuthorizeService;
+
 import br.com.app.notification.service.NotificationService;
+
 import br.com.app.transaction.repository.TransactionRepository;
 import br.com.app.transaction.entity.Transaction;
 import br.com.app.transaction.exception.InvalidTransactionException;
+
 import br.com.app.wallet.entity.Wallet;
 import br.com.app.wallet.repository.WalletRepository;
 import br.com.app.wallet.type.WalletType;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

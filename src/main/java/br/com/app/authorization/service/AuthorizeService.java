@@ -2,9 +2,12 @@ package br.com.app.authorization.service;
 
 import br.com.app.authorization.exception.UnauthorizedTransactionException;
 import br.com.app.authorization.entity.Authorization;
+
 import br.com.app.transaction.entity.Transaction;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
@@ -17,9 +20,8 @@ public class AuthorizeService {
 
     public AuthorizeService() {
         this.restClient = RestClient.builder()
-                .baseUrl("https://quickmock.dev/m/uYBZwE6cDmAc")
+                .baseUrl("https://quickmock.dev/m/Zc8e9UEGnwsw")
                 .build();
-
     }
 
     public void authorize(Transaction transaction) {
